@@ -67,17 +67,27 @@ This is a multi-comment block. It can be used to write multiple lines of comment
 
 # multiple item return
 
-def become_warrior(first_name, last_name, power):
-    # title = first_name + " " + last_name + " " + "the warrior"
-    title = f"{first_name} {last_name} the warrior"
-    new_power = power + 1
-    return title, new_power
+# def become_warrior(first_name, last_name, power):
+#     # title = first_name + " " + last_name + " " + "the warrior"
+#     title = f"{first_name} {last_name} the warrior"
+#     new_power = power + 1
+#     return title, new_power
 
-def main():
-    test("Frodo", "Baggins", 5)
+# def main():
+#     test("Frodo", "Baggins", 5)
 
-def test(first_name, last_name, power):
-    title, new_power = become_warrior(first_name, last_name, power)
-    print(f"{title}, has a power level of: {new_power}!")
+# def test(first_name, last_name, power):
+#     title, new_power = become_warrior(first_name, last_name, power)
+#     print(f"{title}, has a power level of: {new_power}!")
           
-main()
+# main()
+
+def get_max_health(modifier, health):
+    return modifier * health
+
+my_modifier = 5
+my_level = 10
+
+max_health = get_max_health(my_modifier, my_level)
+
+print(f"Max health is: {max_health}")
