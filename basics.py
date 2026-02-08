@@ -45,7 +45,22 @@ This is a multi-comment block. It can be used to write multiple lines of comment
 
 # multiple parameter functions
 
-def subtract(a, b):
-    return a - b
-# multiple arguments function call
-print(subtract(5, 1))
+# def subtract(a, b):
+#     return a - b
+# # multiple arguments function call
+# print(subtract(5, 1))
+
+# hours to seconds
+
+def hours_to_seconds(hours):
+    minutes = hours * 60
+    seconds = minutes * 60
+    # shorthand
+    # return hours * 60 * 60
+    return seconds
+
+def test(hours):
+    secs = hours_to_seconds(hours)
+    print(f"{hours}, hours is {secs} seconds")
+
+test(33)
