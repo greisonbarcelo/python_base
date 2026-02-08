@@ -82,12 +82,24 @@ This is a multi-comment block. It can be used to write multiple lines of comment
           
 # main()
 
-def get_max_health(modifier, health):
-    return modifier * health
+# def get_max_health(modifier, health):
+#     return modifier * health
 
-my_modifier = 5
-my_level = 10
+# my_modifier = 5
+# my_level = 10
 
-max_health = get_max_health(my_modifier, my_level)
+# max_health = get_max_health(my_modifier, my_level)
 
-print(f"Max health is: {max_health}")
+# print(f"Max health is: {max_health}")
+
+# global scope
+player_level = 10
+
+def calculate_health(modifier):
+    return player_level * modifier
+
+def calculate_primary_stats(armor_bonus, modifier):
+    return armor_bonus + modifier + player_level
+
+print(f"Character has an {calculate_health(10)} max health")
+print(f"Character has an {calculate_primary_stats(3, 8)} primary stats")
