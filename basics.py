@@ -29,16 +29,23 @@ This is a multi-comment block. It can be used to write multiple lines of comment
 
 # functions
 
-def area_of_circle(radius):
-    pie = 3.14
-    area = pie * radius * radius
-    return area
+# def area_of_circle(radius):
+#     pie = 3.14
+#     area = pie * radius * radius
+#     return area
 
-sword_length = 1.0
-spear_length = 2.0
+# sword_length = 1.0
+# spear_length = 2.0
 
-sword_area = area_of_circle(sword_length)
-spear_area = area_of_circle(spear_length)
+# sword_area = area_of_circle(sword_length)
+# spear_area = area_of_circle(spear_length)
 
-print(f"Sword area is ${sword_area}")
-print(f"Spear area is ${spear_area}")
+# print(f"Sword area is ${sword_area} meters")
+# print(f"Spear area is ${spear_area} meters")
+
+# multiple parameter functions
+
+def subtract(a, b):
+    return a - b
+# multiple arguments function call
+print(subtract(5, 1))
