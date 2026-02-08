@@ -52,15 +52,32 @@ This is a multi-comment block. It can be used to write multiple lines of comment
 
 # hours to seconds
 
-def hours_to_seconds(hours):
-    minutes = hours * 60
-    seconds = minutes * 60
-    # shorthand
-    # return hours * 60 * 60
-    return seconds
+# def hours_to_seconds(hours):
+#     minutes = hours * 60
+#     seconds = minutes * 60
+#     # shorthand
+#     # return hours * 60 * 60
+#     return seconds
 
-def test(hours):
-    secs = hours_to_seconds(hours)
-    print(f"{hours}, hours is {secs} seconds")
+# def test(hours):
+#     secs = hours_to_seconds(hours)
+#     print(f"{hours}, hours is {secs} seconds")
 
-test(33)
+# test(33)
+
+# multiple item return
+
+def become_warrior(first_name, last_name, power):
+    # title = first_name + " " + last_name + " " + "the warrior"
+    title = f"{first_name} {last_name} the warrior"
+    new_power = power + 1
+    return title, new_power
+
+def main():
+    test("Frodo", "Baggins", 5)
+
+def test(first_name, last_name, power):
+    title, new_power = become_warrior(first_name, last_name, power)
+    print(f"{title}, has a power level of: {new_power}!")
+          
+main()
