@@ -22,6 +22,7 @@ player_poison_health = player_health + poison_damage
 
 print(player_poison_health)
 
+# this is a single line comment. It can be used to write a brief explanation or note about a specific line of code or a small section of code.
 """
-This is a comment block. It can be used to write multiple lines of comments without needing to use the # symbol at the beginning of each line. This is useful for writing longer explanations or notes in your code.
+This is a multi-comment block. It can be used to write multiple lines of comments without needing to use the # symbol at the beginning of each line. This is useful for writing longer explanations or notes in your code.
 """
