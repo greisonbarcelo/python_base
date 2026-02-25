@@ -106,6 +106,23 @@ This is a multi-comment block. It can be used to write multiple lines of comment
 
 # basic testing and debugging study
 
-def total_xp(level, xp_to_add):
-    pass
+# def total_xp(level, xp_to_add):
+#     pass
 
+# def take_magic_damage(health, resist, amp, spell_power):
+#     # new_spell_power = spell_power + (amp / 100)
+#     # new_health = health + (resist / 100)
+
+#     # health_after_dmg = new_health - new_spell_power
+#     total_damage = spell_power * amp
+#     actual_damage_dealt = total_damage - resist
+#     new_health = health - actual_damage_dealt
+
+#     return new_health
+
+# print(take_magic_damage(200, 10, 1, 25))
+
+# practice debugging
+
+def unlock_achievement():
+    pass
