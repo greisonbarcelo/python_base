@@ -135,9 +135,25 @@ This is a multi-comment block. It can be used to write multiple lines of comment
 # print(unlock_achievement(1, 2, "Starting over again"))
 
 # stack trace debugging study aka traceback
-def create_stats_message(strength, wisdom, dexterity):
-    total = strength + wisdom + dexterity
-    msg = f"You have {strength} strength, {wisdom} wisdom, and {dexterity} dexterity totalling in {total} stats"
-    return msg
+# def create_stats_message(strength, wisdom, dexterity):
+#     total = strength + wisdom + dexterity
+#     msg = f"You have {strength} strength, {wisdom} wisdom, and {dexterity} dexterity totalling in {total} stats"
+#     return msg
 
-print(create_stats_message(1, 1, 1))
+# print(create_stats_message(1, 1, 1))
+
+# Computing, python numbers
+# def calculate(sword, arrow, spear, dagger, fire):
+#     total_damage = sword + arrow + spear + dagger + fire
+#     avarage_damage = total_damage / 5
+#     return total_damage, avarage_damage
+
+# print(3 // 2)
+
+# comparison recap
+
+def player1_wins(player1_score, player2_score):
+    if player1_score > player2_score:
+        return True
+    
+print(player1_wins(2, 1))
