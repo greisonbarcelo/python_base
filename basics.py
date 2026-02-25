@@ -153,7 +153,12 @@ This is a multi-comment block. It can be used to write multiple lines of comment
 # comparison recap
 
 def player1_wins(player1_score, player2_score):
-    if player1_score > player2_score:
-        return True
+    # if player1_score > player2_score:
+    #     return True
+
+    # result = player1_score > player2_score
+    # return result
+
+    return player1_score > player2_score
     
 print(player1_wins(2, 1))
