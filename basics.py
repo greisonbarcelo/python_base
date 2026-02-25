@@ -152,13 +152,26 @@ This is a multi-comment block. It can be used to write multiple lines of comment
 
 # comparison recap
 
-def player1_wins(player1_score, player2_score):
-    # if player1_score > player2_score:
-    #     return True
+# def player1_wins(player1_score, player2_score):
+#     # if player1_score > player2_score:
+#     #     return True
 
-    # result = player1_score > player2_score
-    # return result
+#     # result = player1_score > player2_score
+#     # return result
 
-    return player1_score > player2_score
+#     return player1_score > player2_score
     
-print(player1_wins(2, 1))
+# print(player1_wins(2, 1))
+
+username = 'low_cortisol'
+password = 'password'
+
+def check_credentials(login_username, login_password):
+    match_username = login_username == username
+    match_password = login_password == password
+
+    match_creds = match_username & match_password
+
+    return match_creds
+
+print(check_credentials('low_cortisol', 'password'))
