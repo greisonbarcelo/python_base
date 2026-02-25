@@ -93,13 +93,35 @@ This is a multi-comment block. It can be used to write multiple lines of comment
 # print(f"Max health is: {max_health}")
 
 # global scope
-player_level = 10
+# player_level = 10
 
-def calculate_health(modifier):
-    return player_level * modifier
+# def calculate_health(modifier):
+#     return player_level * modifier
 
-def calculate_primary_stats(armor_bonus, modifier):
-    return armor_bonus + modifier + player_level
+# def calculate_primary_stats(armor_bonus, modifier):
+#     return armor_bonus + modifier + player_level
 
-print(f"Character has an {calculate_health(10)} max health")
-print(f"Character has an {calculate_primary_stats(3, 8)} primary stats")
+# print(f"Character has an {calculate_health(10)} max health")
+# print(f"Character has an {calculate_primary_stats(3, 8)} primary stats")
+
+# basic testing and debugging study
+from basics import *
+
+run_cases = [
+    (1, 200, 300),
+    (2, 50, 250),
+]
+
+submit_cases = run_cases + [
+    (0, 0, 0),
+    (0, 200, 200),
+    (176, 350, 17950),
+    (250, 100, 25100),
+]
+
+def test(input1, input2, expected_output):
+    print("-------------------------------")
+    print(f"Inputs: {input1}, {input2}")
+    print(f"Expecting: {expected_output}")
+    result = total_xp(input1, input2)
+    print(f"Actual: {result}")
