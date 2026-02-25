@@ -124,12 +124,20 @@ This is a multi-comment block. It can be used to write multiple lines of comment
 
 # practice debugging
 
-def unlock_achievement(before_xp, ach_xp, ach_name):
+# def unlock_achievement(before_xp, ach_xp, ach_name):
     
-    after_xp = before_xp + ach_xp
-    ach_msg = f"Achievement Unlocked: {ach_name}"
-    return after_xp, ach_msg
+#     after_xp = before_xp + ach_xp
+#     ach_msg = f"Achievement Unlocked: {ach_name}"
+#     return after_xp, ach_msg
 
-print(unlock_achievement(100, 20, "Speedster"))
-print(unlock_achievement(200, 50, "Killer"))
-print(unlock_achievement(1, 2, "Starting over again"))
+# print(unlock_achievement(100, 20, "Speedster"))
+# print(unlock_achievement(200, 50, "Killer"))
+# print(unlock_achievement(1, 2, "Starting over again"))
+
+# stack trace debugging study aka traceback
+def create_stats_message(strength, wisdom, dexterity):
+    total = strength + wisdom + dexterity
+    msg = f"You have {strength} strength, {wisdom} wisdom, and {dexterity} dexterity totalling in {total} stats"
+    return msg
+
+print(create_stats_message(1, 1, 1))
